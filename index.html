@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio pribadi Muhammad Raffa Nur Aditya - Siswa PPLG."
+    />
+    <title>Muhammad Raffa Nur Aditya | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- File CSS & JavaScript -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Indikator Progres Scroll di Paling Atas -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- =========================================================
+         1. HEADER & NAVIGASI UTAMA
+         ========================================================= -->
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navigasi utama">
+        <div class="brand-wrapper">
+          <a class="brand" href="#home">PPLG-Student<span>.</span></a>
+        </div>
+
+        <!-- Tombol Hamburger untuk Layar HP -->
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Buka menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+
+        <!-- Daftar Tautan Navigasi -->
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Tombol Pengubah Tema (Light / Dark Mode) -->
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Ganti tema"
+          title="Ganti tema"
+        >
+          <span class="theme-icon">☾</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =========================================================
+           2. HERO SECTION & FOTO PROFIL (THISME.JPEG) + TOMBOL CV
+           ========================================================= -->
+      <section class="hero section container" id="home">
+        <!-- Kolom Kiri -->
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="status-dot"></span> WELCOME TO MY PORTFOLIO
+          </p>
+          <h1>
+            Hi, I'm<br /><span class="accent-text">Muhammad Raffa</span
+            ><br />Nur Aditya.
+          </h1>
+          <p class="hero-description">
+            Saya sedang belajar dan berkembang di dunia digital. Saya tertarik
+            membangun pengalaman web yang sederhana, menarik, dan bermanfaat.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              Lihat Proyek <span>↗</span>
+            </a>
+            <!-- Tombol Buka CV PDF di Tab Baru -->
+            <a
+              class="button button-outline"
+              href="assets/CV-Muhammad-Raffa.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lihat CV <span>↗</span>
+            </a>
+            <a class="text-link" href="#contact">
+              Hubungi saya <span>→</span>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span>BASED IN INDONESIA</span>
+            <span class="meta-line"></span>
+            <span>ALWAYS LEARNING</span>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Kartu Foto Profil -->
+        <div class="hero-visual reveal">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+
+          <div class="profile-card">
+            <div class="profile-card-top">
+              <span>PERSONAL PROFILE</span>
+              <span class="card-dot"></span>
+            </div>
+
+            <div class="profile-photo-frame">
+              <img
+                src="assets/thisme.jpeg"
+                alt="Foto Muhammad Raffa Nur Aditya"
+                class="profile-photo"
+              />
+              <div class="photo-overlay"></div>
+            </div>
+
+            <div class="profile-card-bottom">
+              <strong>Muhammad Raffa<br />Nur Aditya</strong>
+              <span>Curious mind. Creative process.</span>
+            </div>
+          </div>
+
+          <div class="floating-note note-top">✳ <span>Keep creating</span></div>
+          <div class="floating-note note-bottom">
+            <span class="note-number">01</span>
+            <span>Learning by doing</span>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <!-- =========================================================
+           3. ABOUT SECTION
+           ========================================================= -->
+      <section class="section section-muted" id="about">
+        <div class="container section-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">01 / ABOUT ME</p>
+            <h2>
+              Small steps,<br /><span class="accent-text">big curiosity.</span>
+            </h2>
+          </div>
+
+          <div class="about-content reveal">
+            <p class="lead">
+              Halo! Saya Raffa, seseorang yang sedang membangun perjalanan di
+              dunia teknologi dan kreativitas digital.
+            </p>
+            <p>
+              Saat ini saya fokus mempelajari dasar-dasar pengembangan web
+              menggunakan HTML, CSS, dan JavaScript. Saya percaya kemampuan
+              tumbuh melalui rasa ingin tahu, latihan, dan kemauan untuk terus
+              mencoba.
+            </p>
+
+            <div class="about-facts">
+              <div>
+                <span class="fact-label">FOCUS</span>
+                <strong>Web Development</strong>
+              </div>
+              <div>
+                <span class="fact-label">CURRENTLY</span>
+                <strong>Learning & Building</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           4. SKILLS & TOOLS SECTION (DENGAN PROGRESS BAR)
+           ========================================================= -->
+      <section class="section container" id="skills">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">02 / WHAT I'M LEARNING</p>
+          <h2>Tools & <span class="accent-text">skills.</span></h2>
+          <p class="section-intro">
+            Teknologi yang sedang saya pelajari dan gunakan untuk membangun
+            sesuatu.
+          </p>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-info reveal">
+            <h3>Dasar pengembangan web modern.</h3>
+            <p>
+              Menyusun struktur halaman web yang rapi dan semantik, mengatur
+              tampilan, layout, responsivitas, animasi, serta menambahkan
+              interaksi dan perilaku dinamis pada website.
+            </p>
+            <div class="skills-badges">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>VS Code</span>
+              <span>Git & GitHub</span>
+            </div>
+          </div>
+
+          <div class="skills-bars reveal">
+            <!-- HTML 45% -->
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name">HTML — Structure</span>
+                <span class="skill-percent">45%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="--target-width: 45%"></div>
+              </div>
+            </div>
+
+            <!-- CSS 38% -->
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name">CSS — Styling & Layout</span>
+                <span class="skill-percent">38%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="--target-width: 38%"></div>
+              </div>
+            </div>
+
+            <!-- JavaScript 20% -->
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name">JavaScript — Interaction</span>
+                <span class="skill-percent">20%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="--target-width: 20%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           5. PROJECTS SECTION
+           ========================================================= -->
+      <section class="section section-muted" id="projects">
+        <div class="container">
+          <div class="projects-heading reveal">
+            <div class="section-heading">
+              <p class="eyebrow">03 / SELECTED WORK</p>
+              <h2>Things I've <span class="accent-text">built.</span></h2>
+            </div>
+            <p class="projects-note">
+              Beberapa karya pilihan. Ganti kartu contoh ini dengan proyekmu
+              sendiri saat sudah tersedia.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-art art-one">
+                <span class="art-label">01 — WEB DESIGN</span>
+                <div class="art-window">
+                  <div class="window-bar"><i></i><i></i><i></i></div>
+                  <div class="window-content">
+                    <span class="mock-line long"></span>
+                    <span class="mock-line short"></span>
+                    <div class="mock-blocks"><i></i><i></i><i></i></div>
+                  </div>
+                </div>
+                <span class="art-caption">A clean digital space.</span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3>Personal Website</h3>
+                  <p>Website sederhana untuk memperkenalkan diri.</p>
+                </div>
+                <span class="project-arrow">↗</span>
+              </div>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-art art-two">
+                <span class="art-label">02 — EXPERIMENT</span>
+                <div class="orbit-demo">
+                  <div class="orbit-circle"></div>
+                  <div class="orbit-core">R.</div>
+                  <i></i>
+                </div>
+                <span class="art-caption">Ideas in motion.</span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3>Creative Experiment</h3>
+                  <p>Eksperimen visual dan interaksi web.</p>
+                </div>
+                <span class="project-arrow">↗</span>
+              </div>
+              <div class="project-tags">
+                <span>CSS</span><span>Animation</span>
+              </div>
+            </article>
+          </div>
+
+          <p class="project-disclaimer">
+            Catatan: kartu di atas adalah konten contoh, bukan tautan ke proyek
+            yang sudah dipublikasikan.
+          </p>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           6. BLOG & KIND WORDS SECTION (CARD STATIS)
+           ========================================================= -->
+      <section class="section container" id="blog">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">04 / NOTES & KIND WORDS</p>
+          <h2>Blog & <span class="accent-text">Feedback.</span></h2>
+          <p class="section-intro">
+            Catatan belajar serta masukan dan apresiasi dari guru maupun rekan
+            belajar. (Edit kartu di bawah ini langsung di file index.html).
+          </p>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card reveal">
+            <div class="blog-stars" aria-label="Apresiasi">★★★★★</div>
+            <p class="blog-quote">
+              "Struktur kode HTML dan CSS-nya sudah rapi dan mudah dipahami.
+              Terus kembangkan eksplorasi desain responsif dan dasar-dasar
+              JavaScript-nya!"
+            </p>
+            <div class="blog-author">
+              <div class="author-avatar">GP</div>
+              <div>
+                <strong>Guru Produktif PPLG</strong>
+                <span>Pembimbing Kejuruan</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card reveal">
+            <div class="blog-badge">CATATAN BELAJAR #01</div>
+            <p class="blog-quote">
+              "Belajar memahami bagaimana Flexbox dan CSS Grid bekerja membuat
+              penyusunan tata letak halaman web di HP dan laptop jadi jauh lebih
+              terkontrol."
+            </p>
+            <div class="blog-author">
+              <div class="author-avatar">MR</div>
+              <div>
+                <strong>Muhammad Raffa</strong>
+                <span>14 November 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card reveal">
+            <div class="blog-stars" aria-label="Apresiasi">★★★★★</div>
+            <p class="blog-quote">
+              "Tampilan tema gelapnya nyaman di mata dan navigasinya simpel.
+              Semangat terus membangun proyek-proyek baru di jurusan PPLG!"
+            </p>
+            <div class="blog-author">
+              <div class="author-avatar">RK</div>
+              <div>
+                <strong>Rekan Kelas PPLG</strong>
+                <span>Teman Belajar</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           7. CONTACT SECTION (GET IN TOUCH)
+           ========================================================= -->
+      <section class="section container contact-section" id="contact">
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <p class="eyebrow">05 / GET IN TOUCH</p>
+            <h2>
+              Let's make<br /><span class="accent-text">something good.</span>
+            </h2>
+            <p>
+              Punya ide, pertanyaan, atau ingin memberikan masukan? Kirim pesan
+              langsung melalui formulir ini.
+            </p>
+            <a
+              class="contact-email"
+              id="displayEmail"
+              href="mailto:zafirjaa83@gmail.com"
+            >
+              zafirjaa83@gmail.com ↗
+            </a>
+            <small>
+              Pesan dari form ini akan langsung membuka Gmail / aplikasi email
+              dengan isi pesan siap kirim.
+            </small>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <label for="name">Nama</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Nama kamu"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="nama@gmail.com"
+              required
+            />
+
+            <label for="message">Pesan</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Ceritakan pesanmu..."
+              required
+            ></textarea>
+
+            <button class="button button-primary submit-button" type="submit">
+              Kirim ke Gmail <span>↗</span>
+            </button>
+            <p class="form-note" id="formNote" aria-live="polite">
+              Alamat Gmail penerima terhubung ke zafirjaa83@gmail.com.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+         8. FOOTER
+         ========================================================= -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#home">raffa<span>.</span></a>
+        <p>Designed & built with curiosity.</p>
+        <span>© <span id="year"></span> Muhammad Raffa Nur Aditya</span>
+      </div>
+    </footer>
+  </body>
+</html>
